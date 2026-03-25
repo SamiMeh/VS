@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/">
+    <title>Dice Game</title>
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="controls">
+            <h2>Dice</h2>
+
+            <label>Bet Amount</label>
+            <input type="number" id="betAmount" value="1" min="0.01" step="0.01">
+
+            <label>Target Range</label>
+            <div class="range-inputs">
+                <input type="number" id="rangeStart" value="40" min="0" max="99" step="1" placeholder="From">
+                <input type="number" id="rangeEnd" value="60" min="1" max="100" step="1" placeholder="To">
+            </div>
+
+            <button id="rollBtn">Roll Dice</button>
+            <p id="status">Set range and roll!</p>
+        </div>
+
+        <div class="play-area">
+            <div class="dice-number" id="diceNumber">0.00</div>
+            
+            <div class="dice-bar" id="diceBar">
+                <div class="dice-bar-section losing-section-left" id="leftSection"></div>
+                <div class="dice-bar-section winning-section" id="winSection"></div>
+                <div class="dice-bar-section losing-section-right" id="rightSection"></div>
+                <div class="dice-result" id="diceResult"></div>
+            </div>
+
+            <div class="bar-labels">
+                <span>0</span>
+                <span id="rangeStartLabel">40</span>
+                <span id="rangeEndLabel">60</span>
+                <span>100</span>
+            </div>
+
+            <p style="text-align: center; color: #888; margin-top: 20px;">
+                Win if dice lands between <span id="displayStart">40</span> and <span id="displayEnd">60</span>
+            </p>
+        </div>
+    </div>
+    <script src="/code/Primedice.js"></script>
+</body>
+</html>

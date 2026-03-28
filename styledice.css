@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f1f2a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.panel {
+    width: 220px;
+}
+
+.panel input,
+.panel button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+}
+
+.panel button {
+    background: #00ff00;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.slider-area {
+    width: 500px;
+}
+
+#slider {
+    width: 100%;
+}
+
+.scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px;
+}

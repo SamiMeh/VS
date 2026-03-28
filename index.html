@@ -26,5 +26,47 @@
         <button id="Register-button" onclick="location.href='register.html'">Register</button>
         </div>
     </header>
+    <hr>
+    <div class="slider" >
+    <div class="slides">
+
+        <div class="slide active" style="background-image: url(banner1.jpg);">
+            <div class="slide-content" >
+                <h1>Be a part of our HUGE giveaway!</h1>
+                <p>Until 27.12.2025</p>
+                <button>Join now</button>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url(banne2.jpg);">
+            <div class="slide-content">
+                <h1>Win big rewards</h1>
+                <p>Over 100+ prizes</p>
+                <button>Play now</button>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url(banner3.jpg);">
+            <div class="slide-content">
+                <h1>+5% first time deposit bonus</h1>
+                <p>Fast and secure payouts</p>
+                <button>Redeem</button>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+
+    <div class="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+</div>
+
+
+<script src="slider.js"></script>
 </body>
 </html>

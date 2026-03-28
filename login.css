@@ -1,64 +1,138 @@
+.html{
+    scroll-behavior: smooth;
+}
 body{
+    padding: 0;
+    margin: 0;
     background-color: #15153D;
 }
-.Login-div{
+header{
+    background-color: #15153D;
+    display: flex;
+    align-items: center;   
+}
+.logo{
+     max-height:100px ;
+    width: auto;
+    }
+.placeholder-div{
+  width: 40%;
+  padding-left: 100px;
+}
+
+#placeholder {   
+    outline: none;
     width: 100%;
-    max-width: 400px;
-     margin-top: 150px;
-     margin-left: 35%;
-    background-color: #31317c;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 15px;
-}
-.login-form{
-    padding: 30px;
-    width: 300px;
+    padding: 10px;
+    font-size: 17px;
+    border: 2px rgb(31, 31, 176);
     border-radius: 10px;
-}
-#h1{
+    box-sizing: border-box;
+    background-color:#31317c;
     color: white;
 }
-#email {
-    width: 80%;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    outline: none;
-    border: none;
-}
-#password {
-    width: 80%;
-    outline: none;
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
+.Login-div{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin-left: auto;
 }
 #Login-button{
-    margin-top: 40px;
-    width: 100%;
-    background-color: #FB4B3E;
-    padding: 15px;
-    border: none;
+    margin-left: 100px;
+    cursor: pointer;
+    padding: 15px 20px;
     border-radius: 9px;
+    background-color: #31317c;
     color: white;
+    border-radius: 2px #31317c;
+    border: none;
     font-size: 15px;
+}
+#Register-button{
+    border-radius: 9px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-right: 50px;
+    background-color: #FB4B3E;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+body {
+    margin: 0;
+    background-color: #0e0f2b;
+    font-family: Arial, sans-serif;
+}
+ .navigationbar a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.navigationbar {
+    display: flex;
+    margin-left: 200px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 350px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #10122f, #0b0c22);
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.6s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+    color: white;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-content {
+    max-width: 50%;
+}
+
+.slide-content h1 {
+    color:crimson;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    color: crimson;
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.slide-content button {
+    background-color: #00c853;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
     cursor: pointer;
 }
-#button-exit {
-position: absolute;
-top: 20px;
-right: 40px;
-padding: 15px 20px;
-background-color: #31317c;
-color: white;
-text-decoration: none;
-border: none;
-cursor: pointer;
-font-weight: bold;
-font-size: larger;
-border-radius: 9px;
+
+.slide img {
+    max-height: 250px;
 }
-
-

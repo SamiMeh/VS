@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background: #0f1f2a;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f1f2a;
+}
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+.controls {
+    width: 200px;
+}
+.controls input {
+    width: 180px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+}
+.controls select,
+.controls button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+button {
+    background: #00ff00;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    opacity: 0.9;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    gap: 15px;
+}
+.cell {
+    width: 90px;
+    height: 90px;
+    background: #2c4452;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell.revealed {
+    cursor: default;
+}
+.cell.mine {
+    background: #b33939;
+}
+.cell.gem {
+    background: #1e90ff;
+}

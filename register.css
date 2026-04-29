@@ -1,0 +1,83 @@
+body {
+    background-color: #15153D;
+}
+
+.Register-div {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 150px;
+    margin-left: 35%;
+    background-color: #31317c;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.register-form {
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#h1 {
+    color: white;
+}
+
+#username, #email, #dateofbirth, #password, #passwordconfirm {
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#username:focus, #email:focus, #dateofbirth:focus, #password:focus, #passwordconfirm:focus {
+    box-shadow: 0 0 8px rgba(251, 75, 62, 0.3);
+}
+
+#Register-button {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #FB4B3E;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Register-button:hover {
+    background-color: #e63a2b;
+}
+
+#button-exit {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    padding: 15px 20px;
+    background-color: #31317c;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 9px;
+}
+
+.input-error {
+    border-color: #e74c3c !important;
+}
+
+.error-msg {
+    display: block;
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 3px;
+}

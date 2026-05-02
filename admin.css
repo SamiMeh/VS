@@ -1,0 +1,135 @@
+/* Admin panel uses same dark theme as main site */
+body {
+    padding: 20px;
+    margin: 0;
+    background-color: #15153D !important;
+    color: white;
+}
+
+.admin-container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.admin-container h1 {
+    margin-bottom: 10px;
+}
+
+.admin-container a {
+    color: #FB4B3E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-container a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #31317c;
+    color: white;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    background: #e63a2b;
+    color: white;
+}
+
+.admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #1a1a40;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-container th,
+.admin-container td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #31317c;
+}
+
+.admin-container th {
+    background: #31317c;
+    color: white;
+}
+
+.admin-container tr:hover {
+    background: #252550;
+}
+
+.admin-container .msg {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #00c853;
+    color: white;
+}
+
+.admin-container .role-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.admin-container .role-form select {
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: #31317c;
+    color: white;
+    border: 1px solid #FB4B3E;
+}
+
+.admin-container .role-form button {
+    padding: 6px 14px;
+    border-radius: 5px;
+    background: #FB4B3E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.admin-container .role-form button:hover {
+    background: #e63a2b;
+}
+
+.admin-container .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.admin-container .badge-admin {
+    background: #FB4B3E;
+    color: white;
+}
+
+.admin-container .badge-user {
+    background: #31317c;
+    color: white;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.admin-container .admin-footer-note {
+    margin-top: 25px;
+    color: #888;
+}

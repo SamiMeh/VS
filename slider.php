@@ -1,0 +1,55 @@
+<?php ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hero Slider</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+
+<div class="slider">
+    <div class="slides">
+
+        <div class="slide active">
+            <div class="slide-content">
+                <h1>JOIN OUR 1 MILLION CHIP RACE</h1>
+                <p>Now redeemable to crypto</p>
+                <button>JOIN NOW</button>
+            </div>
+            <img src="slide1.png" alt="Slide 1">
+        </div>
+
+        <div class="slide" background="slide2.png">
+            <div class="slide-content">
+                <h1>WIN BIG REWARDS</h1>
+                <p>Compete with top players</p>
+                <button>PLAY NOW</button>
+            </div>
+            <img src="slide2.png" alt="Slide 2">
+        </div>
+
+        <div class="slide" >
+            <div class="slide-content">
+                <h1>REDEEM YOUR CHIPS</h1>
+                <p>Fast and secure payouts</p>
+                <button>REDEEM</button>
+            </div>
+            <img src="slide3.png" alt="Slide 3">
+        </div>
+
+    </div>
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+
+    <div class="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+</div>
+
+<script src="slider.js"></script>
+</body>
+</html>

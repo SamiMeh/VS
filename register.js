@@ -54,7 +54,5 @@ registerForm.onsubmit = function(e) {
     e.preventDefault();
     return false;
   }
-  
-  // If valid, allow form to submit normally
   return true;
 };

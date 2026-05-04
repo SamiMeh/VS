@@ -74,5 +74,6 @@
         $stmt->bindParam(':id', $userId, PDO::PARAM_INT);
         return $stmt->execute();
     }
+
  }
 ?>
